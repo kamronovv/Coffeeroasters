@@ -1,0 +1,142 @@
+$white: #FEFCF7;
+$Darkwhite: #fefcf797;
+$darkBlue: #0E8784;
+$gray: #83888F;
+$DarkPantone: #333D4B; 
+$yellow: #FDD6BA;
+// font
+$Fraunces: 'Fraunces', serif,;
+$Barlow: 'Barlow', sans-serif;
+
+header {
+    background-image: url(AbauteImage/AbauteHeaderImg.jpg);
+    width: 100%;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 12rem 10rem;
+    padding: 8.5rem;
+    
+}
+.AbHeaderTitle {
+    margin-top: 5rem;
+    font-family: $Fraunces;
+    color: $white;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.AbHeaderPrf {
+    font-family: $Barlow;
+    color: $Darkwhite;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 44rem;
+}
+
+//                                      CommitmentPage
+.cmmtContainer {
+    margin-top: 16.8rem;
+    display: grid;
+    grid-template-columns: 50rem 50rem;
+    
+    column-gap: 8rem ;
+    justify-content: center;
+}
+
+.CmmtTexts {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 23rem 15rem;
+}
+
+.cmmtTitle {
+    font-family: $Fraunces;
+    font-weight: 900;
+    font-size: 4rem;
+    color: $DarkPantone;
+}
+.CmmtPrf {
+    font-family: $Barlow;
+    color: $gray;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+//Factors box
+.FactorsContainer {
+    z-index: -1;
+    margin-top: 25rem;
+    background-color: $DarkPantone;
+    width: 100%;
+    height: 47rem;
+    display: grid;
+    grid-template-columns: 55rem 50rem;
+    justify-content: center;
+    column-gap: 12rem;
+    margin-bottom: 10rem;
+}
+.factorsText {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 28rem 0;
+}
+.factursTitle {
+    font-family: $Fraunces;
+    font-weight: 900;
+    font-size: 4rem;
+    color: $white;
+}
+.factursPrf {
+    font-family: $Barlow;
+    color: $gray;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.factursImg {
+    z-index: 1;
+    margin-top: -8rem;
+    border-radius: 1rem;
+}
+
+// Headquarters
+.HeadquartersContainer {
+    padding: 0 9rem;
+    margin-bottom: 26rem
+}
+.HqsTitle {
+    font-family: $Fraunces;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: $gray;
+}
+.HqsLists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+.HqsItems {
+    display: grid;
+    grid-template-rows: 10rem 5rem 0rem;
+    ul{ 
+        li{
+            font-family: $Barlow;
+            color: $gray;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+.CountName {
+    font-family: $Fraunces;
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: $DarkPantone;
+    line-height: 3.2rem;
+}

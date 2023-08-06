@@ -1,0 +1,165 @@
+@mixin ForPrf ($size, $color  ){
+    font-family: $Barlow;
+    font-size: $size;
+    line-height: 2.6rem;
+    color: $color;
+    font-weight: 400;
+}
+@mixin TitlePrf ($size, $color  ){
+    font-family: $Fraunces;
+    font-size: $size;
+    color: $color;
+    font-weight: 900;
+}
+
+$white: #FEFCF7;
+$Darkwhite: #e7e6dd58;
+$darkBlue: #0E8784;
+$gray: #83888F;
+$DarkPantone: #333D4B; 
+$yellow: #FDD6BA;
+// font
+$Fraunces: 'Fraunces', serif,;
+$Barlow: 'Barlow', sans-serif;
+
+.CreateHeaderContainer {
+    background-image: url(createImage/subscribeBox-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+    padding: 10rem 8rem;
+    display: grid;
+    grid-template-rows: 10rem 10rem;
+}
+.CreateTitle {
+    @include TitlePrf(7.2rem, $white );
+}
+.CreatePrf {
+    @include ForPrf(1.6rem, $Darkwhite);
+    width: 44rem;
+}
+ //                        Prepare Box copy box
+.prepareBgColor {
+    margin-top: 17rem;
+    margin-bottom: 5rem;
+    background-color: $DarkPantone;
+    padding: 1rem 8rem;
+    height: auto;
+}
+.PrepareTextColor {
+    color: $white;
+}
+
+//  box-3
+.CreateBox3Container {
+    display: grid;
+    grid-template-columns: 25rem 73rem;
+    justify-content: space-around;
+    padding: 0 9rem;
+}
+.Left {
+    ul {    
+        display: grid;
+        grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+        li{
+            font-size: 2.4rem;
+            border-bottom: 2px solid $gray;
+            margin-bottom: 1rem;
+            a {
+                @include TitlePrf(2.4rem, $gray); 
+                font-weight: 900;           
+            }
+        }
+    }
+}
+
+.Nbr {
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.RightBoxs {
+    display: flex;
+    margin: 5rem auto 8rem auto;
+    justify-content: space-between;
+    
+}
+
+.bgTitle {
+    @include TitlePrf(4rem, $gray); 
+    font-weight: 900;
+    display: flex;
+    
+}
+.strelk {
+    margin-left: auto;
+    margin-top: -1rem;
+}
+
+.threbox {
+    background-color: $Darkwhite;
+    padding: 3.2rem 2.8rem 8rem 2.8rem;
+    width: 22.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    
+}
+.threbox:hover {
+    background-color: $yellow;
+}
+
+.threboxTitle {
+    @include TitlePrf(2.4rem, $DarkPantone); 
+    font-weight: 900;
+    
+}
+.threboxPrf {
+    @include ForPrf(1.6rem, $gray); 
+    margin-top: 2rem;
+}
+
+.threboxB {
+    background-color: $darkBlue;
+    padding: 3.2rem 2.8rem;
+    width: 22.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.threboxTitleB {
+    @include TitlePrf(2.4rem, $white); 
+    font-weight: 900;
+    
+}
+.threboxPrfB {
+    @include ForPrf(1.6rem, $Darkwhite); 
+    margin-top: 2rem;
+}
+
+// summaey Box
+.SummaryContainer {
+    background-color: $DarkPantone;
+    padding: 2.3rem 6.4rem;
+}
+
+.SummaryTitle {
+    @include ForPrf(1.6rem, $gray); 
+}
+
+.SummaryPrf {
+    @include TitlePrf(2.4rem, $white);
+    line-height: 4rem;
+    margin-top: 0.8rem; 
+    span {
+        color: $darkBlue;
+    }
+}
+
+.ButtonSumr {
+    display: flex;
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-bottom: 16rem;
+}
+
